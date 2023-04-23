@@ -8,7 +8,7 @@ interface IDataSave
 {
 
      public function getName(): string;
-     public function loadDataPlayer(Player $player): void;
+     public function loadDataPlayer(Player|string $player): void;
 
 
     /**
