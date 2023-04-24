@@ -9,7 +9,7 @@ class DataManager
 {
     use SingletonTrait;
 
-    public IDataSave|null $dataSystem = null
+    public IDataSave|null $dataSystem = null;
 
     public function setDataSystem(?IDataSave $saveData, bool $overwrite = false): void
     {
