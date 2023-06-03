@@ -13,18 +13,18 @@ interface IDataSave
 
     /**
      * @param string $id
-     * @param string $type 'role' | 'suffix' | 'prefix' | 'permissions'
+     * @param string $type
      * @param mixed $data
-     * @return void
+     * @return mixed
      */
-    public function updateOnline(string $id, string $type, mixed $data): void;
+    public function updateOnline(string $id, string $type, mixed $data): mixed;
 
     /**
      * @param string $id
      * @param string $type
      * @param mixed $data
-     * @return void
+     * @return mixed
      */
-    public function updateOffline(string $id, string $type, mixed $data): void;
+    public function updateOffline(string $id, string $type, mixed $data): mixed;
 
 }
