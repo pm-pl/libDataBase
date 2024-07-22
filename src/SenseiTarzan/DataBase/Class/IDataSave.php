@@ -9,7 +9,7 @@ interface IDataSave
 
      public function getName(): string;
      public function loadDataPlayer(Player|string $player): void;
-	 public function loadDataPlayerByMiddleware(Player|string $player) : Generator;
+	 public function loadDataPlayerByMiddleware(Player|string $player) : \Generator;
 
     /**
      * @param string $id
