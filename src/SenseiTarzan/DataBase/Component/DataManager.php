@@ -2,12 +2,10 @@
 
 namespace SenseiTarzan\DataBase\Component;
 
-use pocketmine\utils\SingletonTrait;
 use SenseiTarzan\DataBase\Class\IDataSave;
 
 class DataManager
 {
-    use SingletonTrait;
 
     public IDataSave|null $dataSystem = null;
 
@@ -20,7 +18,7 @@ class DataManager
 
     public function resetDataSystem(): void
     {
-        unset($this->dataSystem);
+        $this->dataSystem = null;
     }
 
     /**
